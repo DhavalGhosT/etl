@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h3 style="color: red;padding:20px 0px 20px 20px">Places to Visit in India!!!</h3>
+<br>
+<!-- <ul>
+    <li><a href="{% url 'agra' %}">Agra</a></li>
+    <li><a href="{% url 'dharamshala' %}">Dharamshala</a></li>
+    <li><a href="{% url 'himachal' %}">Himachal</a></li>
+    <li><a href="{% url 'ladakh' %}">Ladhak</a></li>
+    <li><a href="{% url 'rajasthan' %}">Rajasthan</a></li>
+</ul> -->
+
+<div clas="container">
+
+    <div class="row" style="margin: 20px 300px 50px 200px;display: block;text-align: center">
+        <img src="../../static/media/taj.jpg" style="width:600px;height: 400px;border-radius:30px; ">
+        <h1><a href="{% url 'agra' %}">Agra</a></h1>
+    </div>
+
+    <div class="row" style="margin: 20px 300px 50px 200px;display: block;text-align: center">
+        <img src="../../static/media/dal.jpg" style="width:600px;height: 400px;border-radius:30px; ">
+        <h1><a href="{% url 'dharamshala' %}">Dharamshala</a></h4>
+    </div>
+
+    <div class="row" style="margin: 20px 300px 50px 200px;display: block;text-align: center">
+        <img src="../../static/media/holidays-in-himachal.png" style="width:600px;height: 400px;border-radius:30px; ">
+        <h1><a href="{% url 'himachal' %}">Himachal</a></h4>
+    </div>
+
+    <div class="row" style="margin: 20px 300px 50px 200px;display: block;text-align: center">
+        <img src="../../static/media/leh.jpg" style="width:600px;height: 400px;border-radius:30px; ">
+        <h1><a href="{% url 'ladakh' %}">Ladhak</a></h4>
+    </div>
+
+    <div class="row" style="margin: 20px 300px 50px 200px;display: block;text-align: center">
+        <img src="../../static/media/Rajasthn.jpeg" style="width:600px;height: 400px;border-radius:30px; ">
+        <h1><a href="{% url 'rajasthan' %}">Rajasthan</a></h4>
+    </div>
+</div>
+
+{% endblock %}

@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from main_page.views import main_view,offer_view
 from users.views import register
+from destination.views import destination,agra,himachal,ladakh,dharamshala,rajasthan
 
 
 urlpatterns = [
@@ -25,4 +26,10 @@ urlpatterns = [
     path('home/', main_view),
     path('register/', register, name='register'),
     path('offers/', offer_view, name='offers'),
+    path('destination/',destination,name='destinations'),
+    path('destination/agra', agra,name='agra'),
+    path('destination/himachal', himachal,name='himachal'),
+    path('destination/ladakh', ladakh,name='ladakh'),
+    path('destination/dharamshala', dharamshala,name='dharamshala'),
+    path('destination/rajasthan', rajasthan,name='rajasthan'),
 ]
